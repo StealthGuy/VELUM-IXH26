@@ -1,0 +1,48 @@
+{
+  "name": "velum-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "node scripts/build-embed.mjs && nuxt build",
+    "generate": "node scripts/build-embed.mjs && nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "nuxt prepare && eslint .",
+    "type-check": "nuxt typecheck",
+    "test": "vitest run",
+    "demo": "node scripts/sync-demo.mjs",
+    "build:embed": "node scripts/build-embed.mjs",
+    "predev": "node scripts/build-embed.mjs"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0",
+    "@noble/post-quantum": "0.7.1",
+    "@xrpl-commons/xrpl-connect-vue": "1.0.0",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "process": "^0.11.10",
+    "ripple-binary-codec": "2.11.0",
+    "ripple-keypairs": "2.1.0",
+    "xrpl": "^4.0.0",
+    "xrpl-connect": "1.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "0.7.0",
+    "@nuxtjs/tailwindcss": "6.14.0",
+    "eslint": "9.39.4",
+    "nuxt": "3.21.11",
+    "typescript": "5.9.3",
+    "vitest": "5.1.1",
+    "vue": "3.5.43",
+    "vue-router": "4.6.4",
+    "vue-tsc": "3.3.12"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.11.0"
+  },
+  "overrides": {
+    "esbuild": "0.28.2",
+    "postcss-selector-parser": "7.1.6"
+  }
+}

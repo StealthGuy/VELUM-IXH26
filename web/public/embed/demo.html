@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Example Gazette · VELUM embed demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800&family=Instrument+Sans:wght@400;600;700&family=JetBrains+Mono:wght@400&family=Newsreader:wght@600&display=swap" rel="stylesheet">
+<script src="/embed/v1/velum-embed.js" defer></script>
+<style>
+  body { margin: 0; background: #fff; color: #1D1D1D; font-family: Georgia, serif; }
+  .bar { padding: 22px 48px 16px; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #ECEAE1; }
+  .mast { font-family: 'Newsreader', Georgia, serif; font-size: 28px; font-weight: 600; }
+  .note { font: 12px 'Instrument Sans', sans-serif; color: #6A6A6A; letter-spacing: .06em; text-transform: uppercase; }
+  article { max-width: 880px; margin: 0 auto; padding: 28px 48px 60px; display: flex; flex-direction: column; gap: 16px; }
+  h1 { margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 38px; line-height: 1.12; }
+  .by { font: 13px 'Instrument Sans', sans-serif; color: #6A6A6A; }
+  figure { margin: 8px 0 0; }
+  figure img { width: 100%; height: auto; display: block; }
+  figcaption { margin-top: 10px; font: 13px 'Instrument Sans', sans-serif; color: #6A6A6A; }
+  p { font-size: 18px; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <div class="bar"><span class="mast">The Example Gazette</span><span class="note">Sample publisher page · VELUM embed demo</span></div>
+  <article>
+    <h1>Street photo released with identities redacted</h1>
+    <span class="by">By the newsroom · VELUM demo chain on XRPL Testnet</span>
+    <figure>
+      <img src="/samples/street-l2/street.public.png" alt="Published rendition of a redacted street photo"
+           data-velum-sidecar="/samples/street-l2/street.velum.json"
+           data-velum-evidence="/samples/street-l2/street.png">
+      <figcaption>Image released by the authority, redacted by two parties. Click the badge to verify it.</figcaption>
+    </figure>
+    <p>The forensic unit signed the original photo once. A lab blacked out the licence plate; the newsroom blacked out faces, cropped and brightened the picture. Each step is anchored on the XRP Ledger.</p>
+    <figure>
+      <img src="/samples/street-tampered/street.public.png" alt="A copy whose pixels were changed after signing"
+           data-velum-sidecar="/samples/street-tampered/street.velum.json"
+           data-velum-evidence="/samples/street-tampered/street.png">
+      <figcaption>A copy circulating on social media. Someone edited a few pixels after signing.</figcaption>
+    </figure>
+  </article>
+</body>
+</html>

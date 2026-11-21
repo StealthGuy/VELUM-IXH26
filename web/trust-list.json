@@ -1,0 +1,12 @@
+{
+ "version": "demo",
+ "entries": [
+  {
+   "name": "VELUM Demo Authority",
+   "network": "testnet",
+   "xrpl_address": "rbGKuykrhM2r4HNZBVheprZnA2SjF8uTV",
+   "mldsa44_pk_sha256": "80b8fa24b4da316b50491ca1406c9def84d31a79163ebd7853fe048de4da3200",
+   "not_after": null
+  }
+ ]
+}

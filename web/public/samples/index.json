@@ -1,0 +1,49 @@
+{
+ "network": "testnet",
+ "created": "2026-11-21T09:49:02.152Z",
+ "source": "make demo (scripts/demo_pizza.py)",
+ "samples": [
+  {
+   "id": "pizza-l0",
+   "level": "L0",
+   "label": "Original, signed by the authority (for the judges)",
+   "files": {
+    "evidence": "case.png"
+   }
+  },
+  {
+   "id": "pizza-l1",
+   "level": "L1",
+   "label": "Lab hid the password card (for analysts)",
+   "files": {
+    "evidence": "case.png"
+   }
+  },
+  {
+   "id": "pizza-l2",
+   "level": "L2",
+   "label": "Newsroom hid the suspect and shrank it (for the public)",
+   "files": {
+    "evidence": "case.png",
+    "rendition": "case.public.png"
+   }
+  },
+  {
+   "id": "pizza-unmasked",
+   "level": "Attack",
+   "label": "Forgery: the suspect's face pasted back",
+   "files": {
+    "evidence": "case.png"
+   }
+  },
+  {
+   "id": "pizza-restored",
+   "level": "Attack",
+   "label": "Forgery: a pizza painted into the public image",
+   "files": {
+    "evidence": "case.png",
+    "rendition": "case.public.png"
+   }
+  }
+ ]
+}
